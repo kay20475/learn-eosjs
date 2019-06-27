@@ -1,6 +1,6 @@
 # push action of contract (调用合约的 action)
 
-# 准备
+## 准备
 
 首先在测试网络创建测试账户: [Jungle-Testnet](https://monitor.jungletestnet.io/#home) 或者 [Kylin-Testnet](https://www.cryptokylin.io/);
 
@@ -8,7 +8,7 @@
 
 *温馨提示: 创建完账户后记得领取测试网络代币，用于购买 ram 和 抵押 CPU 资源*
 
-# 智能合约
+## 智能合约
 
 构建用于测试的智能合约，合约主要有两个 action 和一张 table 表。[合约源码](../src/contract/iloveeosio11.cpp)。
 关于如何详细的构建和部署智能合约可以参考 [《智能合约开发入门教程》](https://github.com/meet-one/documentation/blob/master/docs/eosio-smart-contract-how-to-program.md)
@@ -31,7 +31,7 @@ deldata:
 cleos -u http://jungle2.cryptolions.io:80 push action iloveeosio11 deldata '[0]' -p iloveeosio11
 ```
 
-# js 脚本
+## js 脚本
 
 首先需要导入相应的 `eosjs` 模块
 
@@ -55,7 +55,7 @@ const signatureProvider = new JsSignatureProvider([defaultPrivateKey]);
 const rpc = new JsonRpc('http://jungle2.cryptolions.io:80', { fetch })
 ```
 
-API
+**API**
 
 ```js
 const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
