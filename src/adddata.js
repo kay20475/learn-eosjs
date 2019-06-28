@@ -2,7 +2,7 @@ const { Api, JsonRpc, RpcError } = require('eosjs');
 const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');
 const fetch = require('node-fetch');
 
-const defaultPrivateKey = "5JkGDUhWrVGu8z5qWk7AfkMZoasVAL3ixeNPoZTEMiA9LZkna6S";
+const defaultPrivateKey = "5JkGDUhWrVGu8z5qWk7AfkMZoasVAL3ixeNPoZTEMiA9LZkna6S"; // signature for action
 const signatureProvider = new JsSignatureProvider([defaultPrivateKey]);
 
 const rpc = new JsonRpc('http://jungle2.cryptolions.io:80', { fetch })
@@ -60,7 +60,7 @@ exports.asyncAddData = function () {
 }
 
 // 同步添加多条数据
-exports.syncAddDate = function () {
+exports.syncAddData = function () {
   (async () => {
     for (let i = 0; i <= 100; ++i) {
       await api.transact({
