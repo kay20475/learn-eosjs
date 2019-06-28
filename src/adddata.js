@@ -2,11 +2,11 @@ const { Api, JsonRpc, RpcError } = require('eosjs');
 const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig');
 const fetch = require('node-fetch');
 
-const defaultPrivateKey = "5JkGDUhWrVGu8z5qWk7AfkMZoasVAL3ixeNPoZTEMiA9LZkna6S"; // signature for action
+const defaultPrivateKey = "5JkGDUhWrVGu8z5qWk7AfkMZoasVAL3ixeNPoZTEMiA9LZkna6S"; // signature for action just for test
 const signatureProvider = new JsSignatureProvider([defaultPrivateKey]);
 
 const rpc = new JsonRpc('http://jungle2.cryptolions.io:80', { fetch })
-const { TextEncoder, TextDecoder } = require('util');   
+const { TextEncoder, TextDecoder } = require('util');
 
 const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
 
