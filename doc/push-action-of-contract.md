@@ -1,4 +1,4 @@
-# push action of contract (调用合约的 action)
+# push action of contract (调用智能合约的 action)
 
 ## 准备
 
