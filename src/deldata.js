@@ -92,10 +92,9 @@ exports.delSyncData = function () {
     scope: contract,       // 查表的 scope
     table: 'data',               // 表名
     limit: -1,                   // 显示数据的条数，-1 表示显示所有数据
-  }).then((res) => {
+  }).then(async(res) => {
     console.log(res)             // 打印结果
     if (res.rows != null) {
-      (async () => {
         for (let index in res.rows) {
           await api.transact({
             actions: [{
@@ -115,8 +114,7 @@ exports.delSyncData = function () {
             }).then(res => {
               console.log(res);
             });
-        }
-      })();
+        };
     }
   });
 } 
