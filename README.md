@@ -5,6 +5,8 @@ examples of eosjs script
 
 2. [delete table of contract (删除智能合约的 table 数据)](./doc/delete-table-of-contract.md)
 
+3. [get contract table to excel(合约表 json 格式数据写入 excel 表格)](./doc/get-data-to-excel.md)
+
 ## use
 
 ### clone repository
