@@ -1,5 +1,6 @@
 let addData = require("./src/adddata");
 let delData = require("./src/deldata");
+let getData = require("./src/getdata");
 
 function run() {
   // 添加一条数据
@@ -13,9 +14,13 @@ function run() {
   // 删除指定的一条数据
   // delData.delOneDate(100);
   // 异步删除所有数据
-  delData.delAsyncData();
+  // delData.delAsyncData();
   // 同步删除所有数据
   // delData.delSyncData();
+
+  // get Data
+  getData.getData();
+  
 }
 
 run()
