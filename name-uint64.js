@@ -7,10 +7,10 @@ const buffer2 = new serialize.SerialBuffer({ textDecoder: new TextDecoder(), tex
 // eosio name to uint64
 buffer1.pushName('eosio')
 var nameToUint64 = numeric.binaryToDecimal(buffer1.getUint8Array())
-console.log(nameToUint64)
+console.log('\'eosio\' to uint64_t is: ', nameToUint64)
 
 // uint64 to eosio name
 var Uint8 = numeric.decimalToBinary(64, '6138663577826885632');
 buffer2.pushArray(Uint8)
 var uint64ToName = buffer2.getName();
-console.log(uint64ToName)
+console.log('6138663577826885632 to name is: ', uint64ToName)
