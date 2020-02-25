@@ -7,7 +7,7 @@ examples of eosjs script
 
 3. [get contract table to excel(合约表 json 格式数据写入 excel 表格)](./doc/get-data-to-excel.md)
 
-4. [eosio name to uint64_t (name 和 uint64_t 之间的相互转换)](./src/name-uint64.js)
+4. [eosio name to uint64_t (name 和 uint64_t 之间的相互转换)](./name-uint64.js)
 
 ## use
 
